@@ -16,6 +16,7 @@ struct Photos: Codable {
     let id: Int
     let likes: Int
     let views: Int
+    let tags: String
     
     static func decodePhotos(from data: Data) throws -> [Photos]{
         let response = try JSONDecoder().decode(PhotosWrapper.self, from: data)
