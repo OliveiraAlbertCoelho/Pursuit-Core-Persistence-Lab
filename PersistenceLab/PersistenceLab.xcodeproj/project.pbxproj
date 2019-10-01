@@ -21,6 +21,10 @@
 		505593E92342F0B40046DB98 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593E82342F0B40046DB98 /* PersistenceHelper.swift */; };
 		505593EB2342F0D20046DB98 /* PhotoPersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593EA2342F0D20046DB98 /* PhotoPersistenceHelper.swift */; };
 		505593ED2342F2EB0046DB98 /* Secretes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593EC2342F2EB0046DB98 /* Secretes.swift */; };
+		505593F12342F53C0046DB98 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593EE2342F53B0046DB98 /* ImageHelper.swift */; };
+		505593F22342F53C0046DB98 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593EF2342F53B0046DB98 /* AppError.swift */; };
+		505593F32342F53C0046DB98 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593F02342F53C0046DB98 /* NetworkHelper.swift */; };
+		505593F52342F55F0046DB98 /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505593F42342F55F0046DB98 /* PhotosAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		505593E82342F0B40046DB98 /* PersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
 		505593EA2342F0D20046DB98 /* PhotoPersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPersistenceHelper.swift; sourceTree = "<group>"; };
 		505593EC2342F2EB0046DB98 /* Secretes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secretes.swift; sourceTree = "<group>"; };
+		505593EE2342F53B0046DB98 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		505593EF2342F53B0046DB98 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		505593F02342F53C0046DB98 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		505593F42342F55F0046DB98 /* PhotosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +154,11 @@
 		505593D62342E7C00046DB98 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				505593EF2342F53B0046DB98 /* AppError.swift */,
+				505593EE2342F53B0046DB98 /* ImageHelper.swift */,
+				505593F02342F53C0046DB98 /* NetworkHelper.swift */,
 				505593EC2342F2EB0046DB98 /* Secretes.swift */,
+				505593F42342F55F0046DB98 /* PhotosAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -277,16 +289,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505593F32342F53C0046DB98 /* NetworkHelper.swift in Sources */,
 				505593B62342A0FB0046DB98 /* ViewController.swift in Sources */,
 				505593B22342A0FB0046DB98 /* AppDelegate.swift in Sources */,
 				505593DD2342EA460046DB98 /* PicturesModel.swift in Sources */,
 				505593ED2342F2EB0046DB98 /* Secretes.swift in Sources */,
 				505593DB2342EA380046DB98 /* DetailViewController.swift in Sources */,
 				505593E22342EC8F0046DB98 /* PhotoCollectionViewCell.swift in Sources */,
+				505593F52342F55F0046DB98 /* PhotosAPI.swift in Sources */,
 				505593D92342EA2D0046DB98 /* FavoriteViewController.swift in Sources */,
 				505593B42342A0FB0046DB98 /* SceneDelegate.swift in Sources */,
+				505593F22342F53C0046DB98 /* AppError.swift in Sources */,
 				505593E92342F0B40046DB98 /* PersistenceHelper.swift in Sources */,
 				505593EB2342F0D20046DB98 /* PhotoPersistenceHelper.swift in Sources */,
+				505593F12342F53C0046DB98 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

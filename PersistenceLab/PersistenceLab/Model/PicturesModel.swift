@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+struct PhotosWrapper: Codable{
+    let hits: [Photos]
+}
+struct Photos: Codable {
+    let largeImageURL: String
+    let id: Int
+    let likes: Int
+    let views: Int
+    
+    static func decodePhotos(from data: Data) throws -> [Photos]{
+        let response = try JSONDecoder().decode(PhotosWrapper.self, from: data)
+        return response.hits
+    }
+}
+
