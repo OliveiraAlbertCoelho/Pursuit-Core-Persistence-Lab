@@ -14,7 +14,7 @@ class PhotoPersistenceHelper {
         try persistenceHelper.save(newElement: newPhoto)
     }
     let persistenceHelper = PersistenceHelper<Photos>(fileName: "savedPhotos.plist")
-    func getPhotos()throws -> [Photos]{
+  func getPhotos()throws -> [Photos]{
    return try persistenceHelper.getObjects()
     }
     private init(){}
