@@ -54,6 +54,9 @@ extension FavoriteViewController: UITableViewDataSource, UITableViewDelegate{
                 }
             }
         }
+            cell.likes.text = "👍 \(data.likes.description)"
+            cell.tags.text = "# \(data.tags)"
+            cell.views.text = "\(data.views.description) people viewed this"
         return cell
     }
         return UITableViewCell()

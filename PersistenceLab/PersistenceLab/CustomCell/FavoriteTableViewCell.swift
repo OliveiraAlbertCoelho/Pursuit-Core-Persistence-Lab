@@ -11,4 +11,7 @@ import UIKit
 class FavoriteTableViewCell: UITableViewCell {
     @IBOutlet weak var favImage: UIImageView!
     
+    @IBOutlet weak var likes: UILabel!
+    @IBOutlet weak var tags: UILabel!
+    @IBOutlet weak var views: UILabel!
 }

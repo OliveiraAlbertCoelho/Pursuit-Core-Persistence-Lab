@@ -28,14 +28,13 @@ class DetailViewController: UIViewController {
         catch {
             print(error)
         }
-
-    
     }
     
     func loadUp(){
-        likes.text = photo?.likes.description
-        views.text = photo?.views.description
-        tags.text = photo?.tags
+        likes.text = "👍 \(photo.likes.description)"
+        views.text = "\(photo.views.description) people viewed this"
+        tags.text = "# \(photo.tags)"
+        
     }
     func setUpImage(){
         let url = photo?.largeImageURL
